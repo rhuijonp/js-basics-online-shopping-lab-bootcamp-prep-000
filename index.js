@@ -62,7 +62,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  	var cartTotal = 0;
+  var cartTotal = 0;
 	
 	for (var i = 0; i < cart.length; i++) {
 		var obj = cart[i];
@@ -71,7 +71,6 @@ function total() {
 
 		cartTotal = cartTotal + objValue;
 	}
-
 	return cartTotal;
 }
 
