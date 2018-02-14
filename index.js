@@ -46,7 +46,7 @@ function viewCart() {
 			// Cart has 3 or more items
 			if (totalItems > 2) {
 				if (totalItems > (i + 1)) {
-					cartStatus += `l${objName} ${at} $${objValue},`;
+					cartStatus += `${objName} ${at} $${objValue},`;
 				} else {
 				  // this is the last item in the cart
 					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
