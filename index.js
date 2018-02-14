@@ -21,6 +21,7 @@ function viewCart() {
   // write your code here
  if (cart.length >= 1) {
 		var cartStatus = "In your cart, you have ";
+		var at = "at";
 		var totalItems = cart.length;
 		
 		for (var i = 0; i < cart.length; i++) { 
