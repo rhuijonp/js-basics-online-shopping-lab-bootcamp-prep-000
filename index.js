@@ -99,8 +99,8 @@ function placeOrder(cardNumber){
 	var cartTotal = total();
 
 	if (empty(cardNumber)){
-	  //console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
-	  //cart = [];
+he card ${cardNumber}.`)
+	  //cart = [];	  //console.log(`Your total cost is $${cartTotal}, which will be charged to t
 	  console.log("Sorry, we don't have a credit card on file for you.");
 	} else {
 	  //console.log("Sorry, we don't have a credit card on file for you.");
