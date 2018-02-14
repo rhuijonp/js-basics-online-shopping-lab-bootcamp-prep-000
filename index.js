@@ -36,7 +36,7 @@ function viewCart() {
 				
 			if (totalItems === 2) {
 				if (i === 0) {
-					cartStatus += ` ${objName} ${at} $${objValue}`;
+					cartStatus += `${objName} ${at} $${objValue}`;
 				} else {
 					cartStatus += ` and ${objName} ${at} $${objValue}.`;
 				}
