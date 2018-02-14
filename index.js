@@ -76,6 +76,21 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  	var itemRemoved = false;
+	if (cart.length > 0) {
+		for (var i = 0; i < cart.length; i++) {
+			var obj = cart[i];
+			var objName = Object.keys(obj); 
+			if (obj.hasOwnProperty(itemName)) {
+				cart.splice(i, 1);
+				itemRemoved = true;
+			}
+		}
+	}
+	if (!itemRemoved) {
+		console.log("That item is not in your cart");
+	}
+	return cart;
 }
 
 function placeOrder(cardNumber) {
