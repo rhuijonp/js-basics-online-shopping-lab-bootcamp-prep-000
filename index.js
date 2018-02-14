@@ -74,7 +74,7 @@ function total() {
 	return cartTotal;
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemName) {
   // write your code here
   	var itemRemoved = false;
 	if (cart.length > 0) {
