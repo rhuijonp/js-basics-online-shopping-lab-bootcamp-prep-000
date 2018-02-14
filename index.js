@@ -95,7 +95,7 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber) {
   // write your code here
-  var message = "";
+ 
 	var charged = false;
 	var cartTotal = total();
 	
@@ -109,5 +109,5 @@ function placeOrder(cardNumber) {
 	console.log(message);
 	if (charged) {
 		cart = [];
-	}
+	} var message = "";
 }
