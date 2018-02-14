@@ -19,7 +19,7 @@ function addToCart(itemName) {
 
 function viewCart() {
   // write your code here
- if (cart.length >= 1) {
+ 	if (cart.length >= 1) {
 		var cartStatus = "In your cart, you have ";
 		var and = "and";
 		var at = "at";
@@ -44,7 +44,11 @@ function viewCart() {
 			
 			if (totalItems > 2) {
 				if (totalItems > (i + 1)) {
-					cartStatus += `${objName} ${at} $${objValue},`;
+					if (i === 0) {
+						cartStatus += `${objName} ${at} $${objValue},`;
+					} else {
+						cartStatus += ` ${objName} ${at} $${objValue},`;
+					}
 				} else {
 					cartStatus = cartStatus.substr(0,cartStatus.length - 1);
 					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
