@@ -62,6 +62,17 @@ function viewCart() {
 
 function total() {
   // write your code here
+  	var cartTotal = 0;
+	
+	for (var i = 0; i < cart.length; i++) {
+		var obj = cart[i];
+		var objName = Object.keys(obj); 
+		var objValue = cart[i][objName];
+
+		cartTotal = cartTotal + objValue;
+	}
+
+	return cartTotal;
 }
 
 function removeFromCart(item) {
