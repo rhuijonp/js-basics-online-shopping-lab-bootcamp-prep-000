@@ -95,7 +95,6 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber){
   // write your code here
-	var message = "";
 	var cartTotal = total();
 	
 	if ((cardNumber !== "") && (cardNumber !== null)){
