@@ -98,6 +98,7 @@ function placeOrder(cardNumber) {
   var message = "";
 	var charged = false;
 	var cartTotal = total();
+	cardNumber = cardNumber.toString();
 	
 	if ((cardNumber !== "") && (cardNumber !== null)){
 	  message = `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
