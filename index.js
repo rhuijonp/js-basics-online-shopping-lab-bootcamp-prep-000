@@ -49,7 +49,6 @@ function viewCart() {
 					cartStatus += `${objName} ${at} $${objValue},`;
 				} else {
 				  // this is the last item in the cart
-				  cartStatus = cartStatus.substr(0,cartStatus.length - 1);
 					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
 				} 
 					
