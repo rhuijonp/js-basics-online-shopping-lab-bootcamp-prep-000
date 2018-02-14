@@ -95,4 +95,19 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  	var message = "";
+	var charged = false;
+	var cartTotal = total();
+	
+	if ((cardNumber !== "") && (cardNumber !== null)){
+	  message = `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
+	  charged = true;
+	} else {
+	  message = "Sorry, we don't have a credit card on file for you.";
+	}
+	
+	console.log(message);
+	if (charged) {
+		cart = [];
+	}
 }
