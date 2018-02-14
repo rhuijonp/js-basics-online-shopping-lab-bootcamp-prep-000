@@ -44,7 +44,7 @@ function viewCart() {
 			
 			if (totalItems > 2) {
 				if (totalItems > (i + 1)) {
-					cartStatus += ` ${objName} ${at} $${objValue},`;
+					cartStatus += `${objName} ${at} $${objValue},`;
 				} else {
 					cartStatus = cartStatus.substr(0,cartStatus.length - 1);
 					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
