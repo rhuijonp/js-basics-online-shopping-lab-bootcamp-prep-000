@@ -50,7 +50,6 @@ function viewCart() {
 						cartStatus += ` ${objName} ${at} $${objValue},`;
 					}
 				} else {
-					cartStatus = cartStatus.substr(0,cartStatus.length - 1);
 					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
 				} 
 					
