@@ -19,44 +19,7 @@ function addToCart(itemName) {
 
 function viewCart() {
   // write your code here
- if (cart.length >= 1) {
-if (cart.length >= 1) {
-		var cartStatus = "In your cart, you have ";
-		var and = "and";
-		var at = "at";
-		var totalItems = cart.length;
-		
-		for (var i = 0; i < cart.length; i++) { 
-			var obj = cart[i];
-			var objName = Object.keys(obj); 
-			var objValue = cart[i][objName]; 
-		
-			if (totalItems === 1){
-				cartStatus += `${objName} ${at} $${objValue}.`;
-			}
-				
-			if (totalItems === 2) {
-				if (i === 0) {
-					cartStatus += ` ${objName} ${at} $${objValue}`;
-				} else {
-					cartStatus += ` and ${objName} ${at} $${objValue}.`;
-				}
-			}
-			
-			if (totalItems > 2) {
-				if (totalItems > (i + 1)) {
-					cartStatus += ` ${objName} ${at} $${objValue},`;
-				} else {
-					cartStatus = cartStatus.substr(0,cartStatus.length - 1);
-					cartStatus +=  ` and ${objName} ${at} $${objValue}.`;
-				} 
-					
-			}	
-		} 
-	} else {
-		cartStatus = "Your shopping cart is empty.";
-	}
-	console.log(cartStatus);
+ 
 }
 
 function total() {
