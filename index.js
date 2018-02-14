@@ -97,7 +97,7 @@ function placeOrder(cardNumber){
   // write your code here
 	var cartTotal = total();
 	
-	if (!cardNumber){
+	if ((cardNumber !== "") && (cardNumber !== null)){
 	  console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
 	  cart = [];
 	} else {
